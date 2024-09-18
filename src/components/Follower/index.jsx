@@ -16,7 +16,7 @@ export const Followers = ({
       onChange={(e) => handleFollowerSearch(e.target.value)}
     />
     <div className={styles.table}>
-      {filteredFollowers.length > 0 &&
+      {filteredFollowers.length > 0 ? (
         filteredFollowers.map((follower) => (
           <div className={styles["table-row"]} key={follower.id}>
             <span>{follower.login}</span>
@@ -33,7 +33,10 @@ export const Followers = ({
               Visit Profile
             </a>
           </div>
-        ))}
+        ))
+      ) : (
+        <div>No followers found</div>
+      )}
     </div>
   </>
 );

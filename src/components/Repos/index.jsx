@@ -31,7 +31,7 @@ export const Repositories = ({
           </div>
         ))
       ) : (
-        <div className={styles.message}>No repositories found.</div>
+        <div className={styles.message}>No repositories found</div>
       )}
     </div>
   </div>

@@ -121,7 +121,7 @@ export const SearchProfile = () => {
         {loading ? <Loading /> : "Search"}
       </button>
 
-      {message && <div className="message">{message}</div>}
+      {message && <div className={styles.message}>{message}</div>}
 
       {profile.login && (
         <div className={styles["profile-container"]}>
