@@ -1,0 +1,47 @@
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border: 1px solid #4fffb0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #3c3c3c;
+    color: #fff;
+    outline: none;
+}
+
+.input-field::placeholder {
+    user-select: none;
+}
+
+.table {
+    margin-top: 20px;
+    color: #fff;
+    max-height: 460px;
+    overflow: auto;
+}
+
+.table-row:hover {
+    background-color: #2d2d2d;
+}
+
+.table-row span,
+.table-row a,
+.table-row p {
+    max-width: 200px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-row a {
+    color: #fff;
+    text-decoration: none;
+    text-overflow: unset;
+}
+
+.table-row a:hover {
+    text-decoration: underline;
+}
