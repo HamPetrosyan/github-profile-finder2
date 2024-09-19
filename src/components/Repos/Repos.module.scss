@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   padding: 20px 0;
   border-bottom: 1px solid #4c4c4c;
   transition: background-color 0.3s ease;
@@ -37,8 +38,8 @@
 }
 
 .table-row span,
-.table-row a,
-.table-row p {
+.table-row p,
+.table-row a {
   max-width: 200px;
   width: 100%;
   overflow: hidden;
@@ -47,6 +48,11 @@
 
 .table-row p {
   white-space: nowrap;
+}
+
+.table-row span {
+  word-wrap: break-word;
+  text-overflow: unset;
 }
 
 .table-row a {
