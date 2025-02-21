@@ -11,7 +11,7 @@ export const Followers = ({
     <input
       type="text"
       className={styles["input-field"]}
-      placeholder="Search followers"
+      placeholder="Search for followers"
       value={followerSearch}
       onChange={(e) => handleFollowerSearch(e.target.value)}
     />
